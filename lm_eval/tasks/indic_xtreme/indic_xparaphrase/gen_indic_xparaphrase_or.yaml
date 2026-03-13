@@ -1,0 +1,3 @@
+include: gen_indic_xparaphrase_common_yaml
+task: gen_indic_xparaphrase_or
+dataset_name: or

@@ -1,0 +1,19 @@
+group: gsm8k_in_gen
+task:
+  - gen_gsm8k_in_bn
+  - gen_gsm8k_in_gu
+  - gen_gsm8k_in_hi
+  - gen_gsm8k_in_kn
+  - gen_gsm8k_in_ml
+  - gen_gsm8k_in_mr
+  - gen_gsm8k_in_or
+  - gen_gsm8k_in_pa
+  - gen_gsm8k_in_ta
+  - gen_gsm8k_in_te
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: True
+    filter_list: normalize-labels
+metadata:
+  version: 1.0

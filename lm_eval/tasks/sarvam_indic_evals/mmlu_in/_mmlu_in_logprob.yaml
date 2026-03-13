@@ -1,0 +1,18 @@
+group: mmlu_in_logprob
+task:
+  - logprob_mmlu_in_bn
+  - logprob_mmlu_in_gu
+  - logprob_mmlu_in_hi
+  - logprob_mmlu_in_kn
+  - logprob_mmlu_in_ml
+  - logprob_mmlu_in_mr
+  - logprob_mmlu_in_or
+  - logprob_mmlu_in_pa
+  - logprob_mmlu_in_ta
+  - logprob_mmlu_in_te
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

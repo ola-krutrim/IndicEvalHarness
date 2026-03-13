@@ -1,0 +1,4 @@
+include: gen_gsm8k_in_common_yaml
+task: gen_gsm8k_in_kn
+dataset_name: kn
+doc_to_text: !function 'utils.doc_to_text_kn'

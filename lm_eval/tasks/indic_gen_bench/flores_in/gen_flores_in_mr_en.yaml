@@ -1,0 +1,4 @@
+include: gen_flores_in_common_yaml
+task: gen_flores_in_mr_en
+process_docs: !function 'utils.process_docs_mr_en'
+doc_to_text: !function 'utils.doc_to_text_mr_en'

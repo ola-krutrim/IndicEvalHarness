@@ -1,0 +1,11 @@
+group: bb_krishi_gen
+task:
+  - gen_bb_krishi_en
+  - gen_bb_krishi_hi
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: true
+    filter_list: normalize-labels
+metadata:
+  version: 1.0

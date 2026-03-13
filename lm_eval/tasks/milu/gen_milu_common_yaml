@@ -1,0 +1,28 @@
+# This file will be included in the generated language-specific task configs of generation based evaluations.
+# It doesn't have a yaml file extension as it is not meant to be imported directly.
+task: null
+dataset_path: ai4bharat/MILU
+description: "Think and answer. Read the text carefully and determine the correct alternative. If A is correct then return A, B is correct then return B, C is correct then return C, D is correct then return D. Put the final answer as Answer: <Answer> where <Answer> is A/B/C/D."
+test_split: test
+dataset_kwargs:
+  trust_remote_code: True
+  token: True
+output_type: generate_until
+doc_to_text: !function utils.doc_to_text
+doc_to_target: !function utils.doc_to_target
+generation_kwargs:
+  max_gen_toks: 4096
+  until:
+    - "</s>"
+filter_list:
+- name: "normalize-labels"
+  filter:
+  - function: regex
+    regex_pattern: "Answer\\s*:\\s*([A-D])"
+  - function: take_first
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: True
+metadata:
+  version: 1.0

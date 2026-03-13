@@ -1,0 +1,3 @@
+include: gen_bb_krishi_common_yaml
+task: gen_bb_krishi_en
+dataset_name: English

@@ -1,0 +1,4 @@
+include: gen_indic_copa_common_yaml
+task: gen_indic_copa_pa
+dataset_name: translation-pa
+doc_to_text: !function 'utils.doc_to_text_pa'

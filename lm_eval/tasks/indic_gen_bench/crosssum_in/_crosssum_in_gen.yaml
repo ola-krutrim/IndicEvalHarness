@@ -1,0 +1,20 @@
+group: crosssum_in_gen
+task:
+  - gen_crosssum_in_as
+  - gen_crosssum_in_bn
+  - gen_crosssum_in_gu
+  - gen_crosssum_in_hi
+  - gen_crosssum_in_kn
+  - gen_crosssum_in_ml
+  - gen_crosssum_in_mr
+  - gen_crosssum_in_or
+  - gen_crosssum_in_pa
+  - gen_crosssum_in_ta
+  - gen_crosssum_in_te
+  - gen_crosssum_in_ur
+aggregate_metric_list:
+  - metric: chrf
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

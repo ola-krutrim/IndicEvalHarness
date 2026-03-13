@@ -1,0 +1,5 @@
+include: logprob_indic_sentiment_common_yaml
+task: logprob_indic_sentiment_ml
+dataset_name: translation-ml
+doc_to_text: !function 'utils.doc_to_text_ml'
+doc_to_choice: !function 'utils.doc_to_choice_ml'

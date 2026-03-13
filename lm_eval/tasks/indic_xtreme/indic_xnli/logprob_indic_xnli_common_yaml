@@ -1,0 +1,20 @@
+# This file will be included in the generated language-specific task configs of logprob based evaluations.
+# It doesn't have a yaml file extension as it is not meant to be imported directly.
+task: null
+dataset_path: Divyanshu/indicxnli
+dataset_name: null
+training_split: train
+validation_split: validation
+test_split: test
+dataset_kwargs:
+  trust_remote_code: True
+output_type: multiple_choice
+doc_to_text: ''
+doc_to_target: label
+doc_to_choice: null
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: True
+metadata:
+  version: 1.0

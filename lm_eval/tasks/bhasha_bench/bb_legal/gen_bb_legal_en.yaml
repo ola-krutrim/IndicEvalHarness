@@ -1,0 +1,3 @@
+include: gen_bb_legal_common_yaml
+task: gen_bb_legal_en
+dataset_name: English

@@ -1,0 +1,18 @@
+group: indic_xparaphrase_logprob
+task:
+  - logprob_indic_xparaphrase_as
+  - logprob_indic_xparaphrase_bn
+  - logprob_indic_xparaphrase_gu
+  - logprob_indic_xparaphrase_hi
+  - logprob_indic_xparaphrase_kn
+  - logprob_indic_xparaphrase_ml
+  - logprob_indic_xparaphrase_mr
+  - logprob_indic_xparaphrase_or
+  - logprob_indic_xparaphrase_pa
+  - logprob_indic_xparaphrase_te
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

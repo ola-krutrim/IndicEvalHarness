@@ -1,0 +1,6 @@
+include: gen_crosssum_in_common_yaml
+task: gen_crosssum_in_gu
+description: I will first show a news article in English. Provide a summary of it
+  in the Gujarati language. Only output the summary and nothing else. You're given
+  few-shot examples to help you answer.
+process_docs: !function 'utils.process_docs_gu'

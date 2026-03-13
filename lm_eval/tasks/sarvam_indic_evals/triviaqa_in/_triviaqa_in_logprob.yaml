@@ -1,0 +1,18 @@
+group: triviaqa_in_logprob
+task:
+  - logprob_triviaqa_in_bn
+  - logprob_triviaqa_in_gu
+  - logprob_triviaqa_in_hi
+  - logprob_triviaqa_in_kn
+  - logprob_triviaqa_in_ml
+  - logprob_triviaqa_in_mr
+  - logprob_triviaqa_in_or
+  - logprob_triviaqa_in_pa
+  - logprob_triviaqa_in_ta
+  - logprob_triviaqa_in_te
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

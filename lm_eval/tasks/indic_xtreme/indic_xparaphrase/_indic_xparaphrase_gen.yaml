@@ -1,0 +1,19 @@
+group: indic_xparaphrase_gen
+task:
+  - gen_indic_xparaphrase_as
+  - gen_indic_xparaphrase_bn
+  - gen_indic_xparaphrase_gu
+  - gen_indic_xparaphrase_hi
+  - gen_indic_xparaphrase_kn
+  - gen_indic_xparaphrase_ml
+  - gen_indic_xparaphrase_mr
+  - gen_indic_xparaphrase_or
+  - gen_indic_xparaphrase_pa
+  - gen_indic_xparaphrase_te
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: True
+    filter_list: strict-match
+metadata:
+  version: 1.0

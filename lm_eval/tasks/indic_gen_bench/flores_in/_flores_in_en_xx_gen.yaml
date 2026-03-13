@@ -1,0 +1,20 @@
+group: flores_in_en_xx_gen
+task:
+  - gen_flores_in_en_as
+  - gen_flores_in_en_bn
+  - gen_flores_in_en_gu
+  - gen_flores_in_en_hi
+  - gen_flores_in_en_kn
+  - gen_flores_in_en_ml
+  - gen_flores_in_en_mr
+  - gen_flores_in_en_or
+  - gen_flores_in_en_pa
+  - gen_flores_in_en_ta
+  - gen_flores_in_en_te
+  - gen_flores_in_en_ur
+aggregate_metric_list:
+  - metric: chrf
+    aggregation: mean
+    weight_by_size: true
+metadata:
+  version: 1.0

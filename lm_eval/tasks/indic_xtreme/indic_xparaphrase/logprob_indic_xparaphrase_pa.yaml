@@ -1,0 +1,4 @@
+include: logprob_indic_xparaphrase_common_yaml
+task: logprob_indic_xparaphrase_pa
+dataset_name: pa
+doc_to_choice: !function 'utils.doc_to_choice_pa'

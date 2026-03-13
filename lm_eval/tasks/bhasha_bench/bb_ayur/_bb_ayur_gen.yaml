@@ -1,0 +1,11 @@
+group: bb_ayur_gen
+task:
+  - gen_bb_ayur_en
+  - gen_bb_ayur_hi
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: true
+    filter_list: normalize-labels
+metadata:
+  version: 1.0

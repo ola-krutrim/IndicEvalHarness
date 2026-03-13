@@ -1,0 +1,5 @@
+include: gen_xorqa_in_common_yaml
+task: gen_xorqa_in_as
+process_docs: !function 'utils.process_docs_as'
+doc_to_text: !function 'utils.doc_to_text_as'
+doc_to_target: !function 'utils.doc_to_target_xx'

@@ -1,0 +1,18 @@
+group: indic_qa_gen
+task:
+  - gen_indic_qa_as
+  - gen_indic_qa_bn
+  - gen_indic_qa_gu
+  - gen_indic_qa_hi
+  - gen_indic_qa_kn
+  - gen_indic_qa_ml
+  - gen_indic_qa_mr
+  - gen_indic_qa_or
+  - gen_indic_qa_pa
+  - gen_indic_qa_te
+aggregate_metric_list:
+  - metric: chrf
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

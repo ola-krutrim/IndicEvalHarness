@@ -1,0 +1,19 @@
+group: mmlu_in_gen
+task:
+  - gen_mmlu_in_bn
+  - gen_mmlu_in_gu
+  - gen_mmlu_in_hi
+  - gen_mmlu_in_kn
+  - gen_mmlu_in_ml
+  - gen_mmlu_in_mr
+  - gen_mmlu_in_or
+  - gen_mmlu_in_pa
+  - gen_mmlu_in_ta
+  - gen_mmlu_in_te
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: True
+    filter_list: normalize-labels
+metadata:
+  version: 1.0

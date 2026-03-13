@@ -1,0 +1,10 @@
+group: xorqa_in_gen
+task:
+  - xorqa_in_xx_en_gen
+  - xorqa_in_xx_gen
+aggregate_metric_list:
+  - metric: chrf
+    aggregation: mean
+    weight_by_size: true
+metadata:
+  version: 1.0

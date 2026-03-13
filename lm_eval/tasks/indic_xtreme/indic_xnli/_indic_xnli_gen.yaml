@@ -1,0 +1,20 @@
+group: indic_xnli_gen
+task:
+  - gen_indic_xnli_as
+  - gen_indic_xnli_bn
+  - gen_indic_xnli_gu
+  - gen_indic_xnli_hi
+  - gen_indic_xnli_kn
+  - gen_indic_xnli_ml
+  - gen_indic_xnli_mr
+  - gen_indic_xnli_or
+  - gen_indic_xnli_pa
+  - gen_indic_xnli_ta
+  - gen_indic_xnli_te
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: True
+    filter_list: strict-match
+metadata:
+  version: 1.0

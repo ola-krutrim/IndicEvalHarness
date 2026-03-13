@@ -1,0 +1,10 @@
+group: flores_in_gen
+task:
+  - flores_in_xx_en_gen
+  - flores_in_en_xx_gen
+aggregate_metric_list:
+  - metric: chrf
+    aggregation: mean
+    weight_by_size: true
+metadata:
+  version: 1.0

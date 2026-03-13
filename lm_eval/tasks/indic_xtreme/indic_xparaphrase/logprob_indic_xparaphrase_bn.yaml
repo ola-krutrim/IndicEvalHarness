@@ -1,0 +1,4 @@
+include: logprob_indic_xparaphrase_common_yaml
+task: logprob_indic_xparaphrase_bn
+dataset_name: bn
+doc_to_choice: !function 'utils.doc_to_choice_bn'

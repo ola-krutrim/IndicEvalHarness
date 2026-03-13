@@ -1,0 +1,3 @@
+include: logprob_milu_common_yaml
+task: logprob_milu_te
+dataset_name: Telugu

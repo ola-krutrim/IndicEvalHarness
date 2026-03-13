@@ -1,0 +1,4 @@
+include: logprob_indic_xnli_common_yaml
+task: logprob_indic_xnli_mr
+dataset_name: mr
+doc_to_choice: !function 'utils.doc_to_choice_mr'

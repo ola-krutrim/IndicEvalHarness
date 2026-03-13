@@ -1,0 +1,2 @@
+include: gen_boolq_in_common_yaml
+task: gen_boolq_in_kn

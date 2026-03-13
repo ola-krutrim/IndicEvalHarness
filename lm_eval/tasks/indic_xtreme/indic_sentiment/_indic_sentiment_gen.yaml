@@ -1,0 +1,20 @@
+group: indic_sentiment_gen
+task:
+  - gen_indic_sentiment_as
+  - gen_indic_sentiment_bn
+  - gen_indic_sentiment_gu
+  - gen_indic_sentiment_hi
+  - gen_indic_sentiment_kn
+  - gen_indic_sentiment_ml
+  - gen_indic_sentiment_mr
+  - gen_indic_sentiment_or
+  - gen_indic_sentiment_pa
+  - gen_indic_sentiment_ta
+  - gen_indic_sentiment_te
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: True
+    filter_list: normalize-labels
+metadata:
+  version: 1.0

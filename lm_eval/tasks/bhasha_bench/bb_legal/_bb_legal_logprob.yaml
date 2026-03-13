@@ -1,0 +1,10 @@
+group: bb_legal_logprob
+task:
+  - logprob_bb_legal_en
+  - logprob_bb_legal_hi
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

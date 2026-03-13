@@ -1,0 +1,3 @@
+include: gen_bb_finance_common_yaml
+task: gen_bb_finance_hi
+dataset_name: Hindi

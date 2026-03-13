@@ -1,0 +1,17 @@
+# This file will be included in the generated language-specific task configs of logprob based evaluations.
+# It doesn't have a yaml file extension as it is not meant to be imported directly.
+task: null
+dataset_path: sarvamai/trivia-qa-indic-mcq
+test_split: validation
+dataset_kwargs:
+  trust_remote_code: True
+output_type: multiple_choice
+doc_to_text: !function utils.doc_to_text
+doc_to_target: !function utils.doc_to_target
+doc_to_choice: !function utils.doc_to_choice
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: True
+metadata:
+  version: 1.0

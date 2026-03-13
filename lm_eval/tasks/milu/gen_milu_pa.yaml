@@ -1,0 +1,3 @@
+include: gen_milu_common_yaml
+task: gen_milu_pa
+dataset_name: Punjabi

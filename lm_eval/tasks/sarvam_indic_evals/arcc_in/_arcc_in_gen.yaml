@@ -1,0 +1,19 @@
+group: arcc_in_gen
+task:
+  - gen_arcc_in_bn
+  - gen_arcc_in_gu
+  - gen_arcc_in_hi
+  - gen_arcc_in_kn
+  - gen_arcc_in_ml
+  - gen_arcc_in_mr
+  - gen_arcc_in_or
+  - gen_arcc_in_pa
+  - gen_arcc_in_ta
+  - gen_arcc_in_te
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: true
+    filter_list: normalize-labels
+metadata:
+  version: 1.0

@@ -1,0 +1,28 @@
+# This file will be included in the generated language-specific task configs of generation based evaluations.
+# It doesn't have a yaml file extension as it is not meant to be imported directly.
+task: null
+dataset_path: sarvamai/gsm8k-indic
+dataset_name: null
+description: "Think and answer. Read the text carefully and determine the correct answer.After solving, write the final numeric answer only in the format- Final Answer: <number>"
+test_split: test
+dataset_kwargs:
+  trust_remote_code: True
+output_type: generate_until
+doc_to_text: null
+doc_to_target: !function utils.doc_to_target
+generation_kwargs:
+  max_gen_toks: 2048
+  until:
+    - "</s>"
+filter_list:
+  - name: "normalize-labels"
+    filter:
+      - function: regex
+        regex_pattern: "Final Answer\\s*:\\s*(\\d+(?:\\.\\d+)?)"
+      - function: take_first
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: True
+metadata:
+  version: 1.0

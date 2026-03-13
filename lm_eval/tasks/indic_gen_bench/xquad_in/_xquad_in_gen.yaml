@@ -1,0 +1,19 @@
+group: xquad_in_gen
+task:
+  - gen_xquad_in_as
+  - gen_xquad_in_bn
+  - gen_xquad_in_gu
+  - gen_xquad_in_hi
+  - gen_xquad_in_kn
+  - gen_xquad_in_ml
+  - gen_xquad_in_mr
+  - gen_xquad_in_or
+  - gen_xquad_in_pa
+  - gen_xquad_in_ta
+  - gen_xquad_in_te
+aggregate_metric_list:
+  - metric: chrf
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

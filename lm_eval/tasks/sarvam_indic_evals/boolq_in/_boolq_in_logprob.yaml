@@ -1,0 +1,18 @@
+group: boolq_in_logprob
+task:
+  - logprob_boolq_in_bn
+  - logprob_boolq_in_gu
+  - logprob_boolq_in_hi
+  - logprob_boolq_in_kn
+  - logprob_boolq_in_ml
+  - logprob_boolq_in_mr
+  - logprob_boolq_in_or
+  - logprob_boolq_in_pa
+  - logprob_boolq_in_ta
+  - logprob_boolq_in_te
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

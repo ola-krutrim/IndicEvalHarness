@@ -1,0 +1,19 @@
+group: indic_xnli_logprob
+task:
+  - logprob_indic_xnli_as
+  - logprob_indic_xnli_bn
+  - logprob_indic_xnli_gu
+  - logprob_indic_xnli_hi
+  - logprob_indic_xnli_kn
+  - logprob_indic_xnli_ml
+  - logprob_indic_xnli_mr
+  - logprob_indic_xnli_or
+  - logprob_indic_xnli_pa
+  - logprob_indic_xnli_ta
+  - logprob_indic_xnli_te
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: true
+metadata:
+  version: 1.0

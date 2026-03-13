@@ -1,0 +1,5 @@
+include: logprob_indic_sentiment_common_yaml
+task: logprob_indic_sentiment_ta
+dataset_name: translation-ta
+doc_to_text: !function 'utils.doc_to_text_ta'
+doc_to_choice: !function 'utils.doc_to_choice_ta'

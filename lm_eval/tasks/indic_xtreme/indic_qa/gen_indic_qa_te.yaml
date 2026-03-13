@@ -1,0 +1,4 @@
+include: gen_indic_qa_common_yaml
+task: gen_indic_qa_te
+dataset_name: indicqa.te
+doc_to_text: !function 'utils.doc_to_text_te'

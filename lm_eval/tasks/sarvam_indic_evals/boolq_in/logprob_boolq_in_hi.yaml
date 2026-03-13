@@ -1,0 +1,2 @@
+include: logprob_boolq_in_common_yaml
+task: logprob_boolq_in_hi

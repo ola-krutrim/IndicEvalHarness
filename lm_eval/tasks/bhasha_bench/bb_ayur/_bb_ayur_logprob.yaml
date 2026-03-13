@@ -1,0 +1,10 @@
+group: bb_ayur_logprob
+task:
+  - logprob_bb_ayur_en
+  - logprob_bb_ayur_hi
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

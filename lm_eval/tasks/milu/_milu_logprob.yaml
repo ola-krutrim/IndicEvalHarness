@@ -1,0 +1,18 @@
+group: milu_logprob
+task:
+  - logprob_milu_bn
+  - logprob_milu_gu
+  - logprob_milu_hi
+  - logprob_milu_kn
+  - logprob_milu_ml
+  - logprob_milu_mr
+  - logprob_milu_or
+  - logprob_milu_pa
+  - logprob_milu_ta
+  - logprob_milu_te
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: True
+metadata:
+  version: 1.0

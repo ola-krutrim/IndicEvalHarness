@@ -1,0 +1,4 @@
+include: gen_indic_sentiment_common_yaml
+task: gen_indic_sentiment_kn
+dataset_name: translation-kn
+doc_to_text: !function 'utils.doc_to_text_kn'

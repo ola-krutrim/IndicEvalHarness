@@ -1,0 +1,19 @@
+group: xorqa_in_xx_en_gen
+task:
+  - gen_xorqa_in_as_en
+  - gen_xorqa_in_bn_en
+  - gen_xorqa_in_gu_en
+  - gen_xorqa_in_hi_en
+  - gen_xorqa_in_kn_en
+  - gen_xorqa_in_ml_en
+  - gen_xorqa_in_mr_en
+  - gen_xorqa_in_or_en
+  - gen_xorqa_in_pa_en
+  - gen_xorqa_in_ta_en
+  - gen_xorqa_in_te_en
+aggregate_metric_list:
+  - metric: chrf
+    aggregation: mean
+    weight_by_size: true
+metadata:
+  version: 1.0

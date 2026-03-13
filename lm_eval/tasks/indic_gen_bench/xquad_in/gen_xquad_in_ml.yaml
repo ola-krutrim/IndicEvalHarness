@@ -1,0 +1,3 @@
+include: gen_xquad_in_common_yaml
+task: gen_xquad_in_ml
+process_docs: !function 'utils.process_docs_ml'

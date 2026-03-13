@@ -1,0 +1,28 @@
+# This file will be included in the generated language-specific task configs of generation based evaluations.
+# It doesn't have a yaml file extension as it is not meant to be imported directly.
+task: null
+dataset_path: bharatgenai/BhashaBench-Finance
+description: "Think step by step before you answer. Put the final answer as Answer: <Answer> where <Answer> is option label which is A/B/C/D.\n"
+test_split: test
+dataset_kwargs:
+  token: True
+  trust_remote_code: True
+output_type: generate_until
+doc_to_text: !function utils.doc_to_text
+doc_to_target: correct_answer
+generation_kwargs:
+  max_gen_toks: 4096
+  until:
+    - "</s>"
+filter_list:
+- name: "normalize-labels"
+  filter:
+  - function: regex
+    regex_pattern: "Answer\\s*:\\s*([A-D])"
+  - function: take_first
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: True
+metadata:
+  version: 1.0
