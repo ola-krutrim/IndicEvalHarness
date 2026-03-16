@@ -8,7 +8,7 @@ IndicEvalHarness is an evaluation pipeline designed to evaluate Large Language M
 
 This repository contains code for evaluating language models on various indic benchmarks built upon the [lm-eval-harness](https://github.com/EleutherAI/lm-evaluation-harness) framework.
 
-The pipeline supports two evaluation modes. 
+The pipeline supports two evaluation modes.
 1. **Log-probability based evaluation** scores fixed answer options (e.g. multiple-choice continuations) and selects the option with the highest log-probability under the model. It is deterministic, efficient (no sampling), and well-suited for classification-style and multiple-choice benchmarks; it is a natural fit for **pretrained (base) models**, which are typically evaluated by scoring continuations.
 2. **Generative based evaluation** asks the model to produce free-form text (e.g. via chat or completion APIs) and then parses or matches the output to the gold answer. It reflects real-world usage and supports open-ended or conversational formats, at the cost of decoding variability, and suits **instruction-tuned (chat) models** that are designed to follow prompts and generate answers. Many benchmarks are available in both forms (e.g. `indic_copa_logprob` vs `indic_copa_gen`) so you can choose the mode that fits your task and infrastructure.
 
@@ -113,7 +113,7 @@ Contributions are welcome! If you have any improvements or suggestions, feel fre
 
 IndicEvalHarness is built with reference to the code of the following projects: [LM-Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness). Thanks for their awesome work!
 
-## Citation: 
+## Citation:
 If you use IndicEvalHarness, please cite:
 
 ```bibtex
